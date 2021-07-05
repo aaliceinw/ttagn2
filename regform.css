@@ -1,0 +1,84 @@
+.header, .footer {
+    background-color: rgba(100, 30, 30, 0.555);
+    font-size: large;
+    color: bisque;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+  }
+  .nav-right{
+    float: right;
+  }
+  .nav-right a{
+    color: bisque;
+  }
+  .nav-right a:hover{
+    color: darkred;
+  }
+  .nav-right a:visited{
+    color: rgb(155, 69, 76);
+  }
+
+
+body {
+    font-size: 16px;
+    background: #f9f9f9;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+form {
+    width: 320px;
+    background: bisque;
+    padding: 15px 40px 40px;
+    border: 2px solid rgba(100, 30, 30, 0.555);
+    margin: 50px auto 0;
+    border-radius: 10px;
+}
+label {
+    display: block;
+    margin-bottom: 5px
+}
+label i {
+    color: rgb(63, 48, 48);
+    font-size: 80%;
+}
+input, select {
+    border: 2px solid rgb(172, 115, 115);
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.row {
+    padding-bottom: 10px;
+}
+.form-inline {
+    border: 1px solid  rgb(172, 115, 115);
+    padding: 8px 10px 4px;
+    border-radius: 3px;
+}
+.form-inline label, .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+.error {
+    color: red;
+    font-size: 90%;
+}
+input[type="submit"] {
+    font-size: 110%;
+    font-weight: 100;
+    background: rgba(100, 30, 30, 0.555);
+    box-shadow: 0 3px 0 rgba(100, 30, 30, 0.555);
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: #80b601;
+}
