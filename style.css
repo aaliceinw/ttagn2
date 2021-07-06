@@ -4,7 +4,7 @@
     box-sizing: border-box;
 
 }
-header{
+.header{
     height: 80px;
     width: 100%;
     display: flex;
@@ -13,8 +13,9 @@ header{
     padding: 30px 10%;
     background-color: cornsilk;
 }
-header a {
+.header a {
     font-weight: 700;
+    color:aqua
 }
 .logo-text{
     cursor: pointer;
@@ -30,7 +31,7 @@ text-decoration: none;
 
 
 }
-#text{
+.text{
     text-align: center;
     color: #0088a9;
     font-size: 20px;

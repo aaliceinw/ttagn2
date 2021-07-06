@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="demoreg.css">
+    <script src="regform.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Hospital Management System</h1>
+        <div class="nav-right">
+          <a href="login.html" src="login.html" url="login">Login</a>
+          <a href="regform.html" src="registrationForm" url="register">Register</a>
+          <a href="index.html" src="index" url="home">Home</a>
+        </div>
+    </div>
+
+    <div class=rform>
+<form name="registrationForm" onsubmit="return validateForm()" action="confirmation.php" method="post">
+    <h2>Registration Form</h2>
+   
+    <div class="row">
+        <label>Select User</label>
+        <div class="form-inline"> <!--verify if the user parameter needs to be unique-->
+            <label><input type="radio" name="user" > Doctor</label>
+            <label><input type="radio" name="user" > Patient</label>
+        </div>
+        <div class="error" id="userErr"></div>
+    </div>
+    <div class="row">
+   
+    <div class="row">
+        <label>Patient Name</label>
+        <input type="text" name="pname" placeholder="Enter Patient Name">
+        <div class="error" id="pnameErr"></div>
+    </div>
+    <div class="row">
+        <label>Last Name</label>
+        <input type="text" name="lname" placeholder="Last Name">
+        <div class="error" id="lnameErr"></div>
+    </div>
+    <div class="row">
+        <label>Patient Phone Number</label>
+        <input type="text" name="pphone" placeholder="Enter Phone Number" maxlength="10">
+        <div class="error" id="phoneErr"></div>
+    </div>
+    <div class="row">
+        <label>Post Code </label>
+        <input type="text" name="email" placeholder="Enter Post Code">
+        <div class="error" id="emailErr"></div>
+    </div>
+    <div class="row">
+        <label>Password</label>
+        <input type="text" name="pwd" placeholder="Enter Password">
+        <div class="error" id="pw1Err"></div>
+    </div>
+    <div class="row">
+        <label>Confirm Password</label>
+        <input type="text" name="cpwd" placeholder="Confirm Password">
+        <div class="error" id="pw1Err"></div>
+    </div>
+    <div class="row">
+        <label>Date of Birth </label>
+        <select name="dob">
+            <option>Select</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>India</option>
+            <option>Jamaica</option>
+            <option>South Africa</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+        </select> 
+        <div class="error" id="dobErr"></div>
+    </div>
+          
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+</div>
+</body>
+</html>

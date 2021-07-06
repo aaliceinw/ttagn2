@@ -1,5 +1,5 @@
 .header, .footer {
-    background-color: rgba(100, 30, 30, 0.555);
+    background-color: #0088a9;
     font-size: large;
     color: bisque;
     text-align: center;
@@ -19,21 +19,27 @@
     color: rgb(155, 69, 76);
   }
 
-
+.h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 body {
     font-size: 16px;
     background: #f9f9f9;
-    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 h2 {
     text-align: center;
     text-decoration: underline;
+    color: bisque;
 }
-form {
+.rform {
     width: 320px;
-    background: bisque;
+    background: #0088a9;
     padding: 15px 40px 40px;
-    border: 2px solid rgba(100, 30, 30, 0.555);
+    border: 2px solid (10, 2, 46, 0.555);
     margin: 50px auto 0;
     border-radius: 10px;
 }
@@ -42,11 +48,11 @@ label {
     margin-bottom: 5px
 }
 label i {
-    color: rgb(63, 48, 48);
+    color: rgba(10, 2, 46, 0.555);
     font-size: 80%;
 }
 input, select {
-    border: 2px solid rgb(172, 115, 115);
+    border: 2px solid rgba(10, 2, 46, 0.555);
     padding: 10px;
     display: block;
     width: 100%;
@@ -57,14 +63,16 @@ input, select {
     padding-bottom: 10px;
 }
 .form-inline {
-    border: 1px solid  rgb(172, 115, 115);
+    border: 5px solid  rgba(10, 2, 46, 0.555);
     padding: 8px 10px 4px;
-    border-radius: 3px;
+    border-radius: 5px;
+
 }
 .form-inline label, .form-inline input {
     display: inline-block;
     width: auto;
     padding-right: 15px;
+    
 }
 .error {
     color: red;
@@ -73,8 +81,8 @@ input, select {
 input[type="submit"] {
     font-size: 110%;
     font-weight: 100;
-    background: rgba(100, 30, 30, 0.555);
-    box-shadow: 0 3px 0 rgba(100, 30, 30, 0.555);
+    background: rgba(17, 10, 53, 0.555);
+    
     color: #fff;
     margin-top: 10px;
     cursor: pointer;
