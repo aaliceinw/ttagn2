@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="demoreg.css">
+    <link rel="stylesheet" href="regform.css">
     <script src="regform.js"></script>
 </head>
-<body>
-    <div class="header">
-        <h1>Hospital Management System</h1>
-        <div class="nav-right">
-          <a href="login.html" src="login.html" url="login">Login</a>
-          <a href="regform.html" src="registrationForm" url="register">Register</a>
-          <a href="index.html" src="index" url="home">Home</a>
-        </div>
+
+<div class="header">
+
+    <div class="hlogo">
+        <img src="hmslogo.png" width=20% height=15%/>
     </div>
+    <h1>Hospital Management Systems</h1>
+    <div class="nav-right">
+      <a href="logform.html" src="logForm" ><button>Login</button></a>
+      <a href="regform.html" src="registrationform" ><button>Register</button></a>
+      <a href="index.html" src="index"><button>Home</button></a> </a>
+      </div>
+  </div>
 
     <div class=rform>
 <form name="registrationForm" onsubmit="return validateForm()" action="confirmation.php" method="post">
