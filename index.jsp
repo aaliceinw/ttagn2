@@ -1,22 +1,12 @@
-<%-- 
-    Document   : index
-    Created on : 8 Jul 2021, 09:26:06
-    Author     : joanlaine
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+ 
 <head>
-<title>Hospital Management System</title>
+<title>Home</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 <!--[if IE 6]>
 <link rel="stylesheet" type="text/css" href="iecss.css" />
@@ -27,13 +17,13 @@
   <div class="header">
     <div id="logo"><a href="#"><img src="images/logo.png" alt="" width="162" height="54" border="0" /></a></div>
     <div class="right_header">
-      <div class="top_menu"> <a href="#" class="login">login</a> <a href="#" class="sign_up">Register</a> </div>
+      <div class="top_menu"> <a href="login.jsp" class="login">login</a> <a href="dreg.jsp" class="sign_up">Register</a> </div>
       <div id="menu">
         <ul>
-          <li><a class="current" href="#">Home</a></li>
-          <li><a href="#">Patient Access</a></li>
-          <li><a href="#">Doctor Access</a></li>
-          <li><a href="#">Display Records</a></li>
+          <li><a class="current" href="index.jsp">Home</a></li>
+          <li><a href="patientAccess.jsp">Patient Access</a></li>
+          <li><a href="doctorAccess.jsp">Doctor Access</a></li>
+          <li><a href="bookings.jsp">Bookings</a></li>
         </ul>
       </div>
     </div>

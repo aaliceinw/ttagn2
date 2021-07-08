@@ -1,15 +1,11 @@
-<%-- 
-    Document   : login
-    Created on : 8 Jul 2021, 09:16:42
-    Author     : joanlaine
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>login</title>
     </head>
     <body>
         <form name="loginForm" onsubmit="return validateForm()" action="confirmation.php" method="post">
