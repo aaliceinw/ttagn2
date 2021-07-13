@@ -1,6 +1,6 @@
 <%-- 
-    Document   : displayRecords
-    Created on : 8 Jul 2021, 09:24:08
+    Document   : bookings
+    Created on : 8 Jul 2021, 11:26:51
     Author     : joanlaine
 --%>
 
@@ -8,8 +8,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+       
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>bookings</title>
     </head>
     <body>
         <h1>Hello World!</h1>
