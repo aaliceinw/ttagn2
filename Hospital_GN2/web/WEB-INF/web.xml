@@ -16,6 +16,14 @@
         <servlet-name>DlogServlet</servlet-name>
         <servlet-class>com.hospital.controller.DlogServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>PregServlet</servlet-name>
+        <servlet-class>com.hospital.controller.PregServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PlogServlet</servlet-name>
+        <servlet-class>com.hospital.controller.PlogServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/register</url-pattern>
@@ -30,7 +38,15 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>DlogServlet</servlet-name>
-        <url-pattern>/dlog</url-pattern>
+        <url-pattern>/dlogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PregServlet</servlet-name>
+        <url-pattern>/preg</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PlogServlet</servlet-name>
+        <url-pattern>/plog</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

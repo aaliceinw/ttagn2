@@ -4,19 +4,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>plog</title>
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="formstyle.css" media="screen" />
     </head>
     <body>
-       <center>
+<!--       <center>
         <div class="form">
-        <form action="" method="post">
+        <form action="plog" method="post">
 
-            <h1> Patient Login Form<h1>
+            <h1> Patient Login Form</h1>
 
             <table border="1">
 
                 <tr>
-                    <td>Phone Number:<input type="text" name="pphone" value="" />
+                    <td>Phone Number:<input type="text" name="phone" value="" />
 
                 </tr>
                 <tr>
@@ -26,7 +26,7 @@
 
 
                 <tr>
-                    <td><input id="s1" type="submit" value="Submit" /></td>
+                    <td><input id="s1" type="submit" value="Login" /></td>
 
                     <td><input id="s1" type="reset" value="Clear" /></td>
                 </tr>
@@ -36,6 +36,26 @@
         </table>
 </form>
   </div>  
-    </center>
+    </center>-->
+    
+    <div class="main-block">
+    <form action="plog" method="post">
+      <h1>Patient Access</h1>
+      <fieldset>
+        <legend>
+          <h3>Patient Login</h3>
+          
+        </legend>
+
+        <div class="form-inner">
+            <h1>Patient Login</h1>
+            Phone Number: <input type="text" name="phone" value="" placeholder="Login with phone number">
+            Password: <input type="password" name="password" value ="" placeholder="Enter Password">
+            
+            <button type="submit" value="Submit">Submit</button>
+          </div>
+      </fieldset>
+    </form>
+    </div>
     </body>
 </html>

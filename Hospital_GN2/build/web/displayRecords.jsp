@@ -9,15 +9,11 @@
 
 <html>
 
-    <head>
-
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-        <title>Display Records</title>
-
-                <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-
-    </head>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>preg</title>
+        <link rel="stylesheet" type="text/css" href="formstyle.css" media="screen" />
+    </head>
 
     <body>
 

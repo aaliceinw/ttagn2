@@ -6,8 +6,12 @@ package com.hospital.controller;
  * and open the template in the editor.
  */
 
+import com.hospital.model.MyConnection;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -21,7 +25,7 @@ import javax.servlet.http.HttpSession;
 
 public class DlogServlet extends HttpServlet {
 
-    String docName, password;
+    String docid, password;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -39,27 +43,38 @@ public class DlogServlet extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */   
 
         //get request parameters
-        docName = request.getParameter("docName");
+        docid = request.getParameter("docid");
         password = request.getParameter("password");
         
-        //validate user from DB
-        //user =Admin, password=admin123
-
-if(docName.equals("docName") && password.equals("password")){
-    //doctorlogin page
-request.getRequestDispatcher("doctorAccess.jsp").include(request, response);  
-} 
-else{
-  //doctor login page
-request.getRequestDispatcher("dlog.jsp").forward(request, response);
-out.print("Sorry Login or Password is incorrect. Please try again.");
-}//else ends
-                
-        } //try ends
-       catch(Exception ex) {
+//            Connection con = MyConnection.connect(); 
+            
+            //4. Write Sql
+            Statement stmt = con.createStatement();
+            
+             
+            String qry1 = "select * from patient where doctor='"+docid+"' and password='"+password+"'";
+            ResultSet rs1 = stmt.executeQuery(qry1);
+            if(rs1.next())
+            {
+              out.print("Hi "+rs1.getString(1)+ "Welcome, to  Medical Clinic Management System.");
+              
+              HttpSession se = request.getSession();
+              se.setAttribute("doctor" , docid);
+              
+              request.getRequestDispatcher("doctorAccess.jsp").forward(request, response);
+          }
+          else{
+              out.print("Oops.. your username or password is incorrect.");
+              
+              request.getRequestDispatcher("dlog.jsp").include(request, response);
+          }
+            
+            
+        } // try ends
+        catch(Exception ex) {
             out.close();
-        }//finally ends
-    }//class ends
+        }
+    }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**

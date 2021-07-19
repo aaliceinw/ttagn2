@@ -30,15 +30,15 @@
     <div class="middle_box_content"><img src="images/banner_content.jpg" alt="" /></div>
 
     </div>
-
+<!--
         <div class="iframe" align="right">
 <iframe name="f1" height="600px" width="74%" ></iframe>
-</div>  
+</div>  -->
          <center>
         <div class="form">
         <form action="" method="post">
 
-            <h1> Patient Access Form<h1>
+            <h1> Patient Access Form</h1>
 
             <table border="1">
 
