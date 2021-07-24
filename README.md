@@ -1,3 +1,3 @@
 Javascript project - create a Hospital Management System to manage patient treatements and maintain their hospital records
 
-Learning how to use GitHub by making an edit to this readme.md file
+The project comprises of two user interfaces enabling a patient to book appointments and doctors to manage the patient consultation.
