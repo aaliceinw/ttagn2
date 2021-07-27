@@ -37,10 +37,11 @@ public class PlogServlet extends HttpServlet {
             ResultSet rs1 = stmt.executeQuery(qry1);
             if(rs1.next())
             {
-              out.print("Hi "+rs1.getString(1)+ "Welcome, to  Medical Clinic Management System.");
+                String name = rs1.getString(2);
+              out.print("Hi "+name+ "Welcome, to  Medical Clinic Management System.");
               
-              HttpSession se = request.getSession();
-              se.setAttribute("patient" , phone);
+              //HttpSession se = request.getSession();
+              request.setAttribute("name" , name);
               
               request.getRequestDispatcher("patientAccess.jsp").forward(request, response);
           }

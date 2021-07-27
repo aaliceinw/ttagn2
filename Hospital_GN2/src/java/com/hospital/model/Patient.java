@@ -16,20 +16,22 @@ public class Patient {
     String address;
     String dob;
     String password;
+    String problem;        
     
     
 //create default constructor
-    public Patient() {
+       public Patient() {
     }
 
   //create parameterised constructor
 
-    public Patient(int phone, String name, String address, String dob, String password) {
+    public Patient(int phone, String name, String address, String dob, String password, String problem) {
         this.phone = phone;
         this.name = name;
         this.address = address;
         this.dob = dob;
         this.password = password;
+        this.problem = problem;
     }
 
     public int getPhone() {
@@ -72,10 +74,16 @@ public class Patient {
         this.password = password;
     }
 
+    public String getProblem() {
+        return problem;
+    }
 
-    
-    
-  
-    
+    public void setProblem(String problem) {
+        this.problem = problem;
+    }
+
+
+
+   
     
 }

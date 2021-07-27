@@ -46,20 +46,23 @@ public class DlogServlet extends HttpServlet {
         docid = request.getParameter("docid");
         password = request.getParameter("password");
         
-//            Connection con = MyConnection.connect(); 
+           Connection con = MyConnection.connect(); 
             
             //4. Write Sql
             Statement stmt = con.createStatement();
             
              
-            String qry1 = "select * from patient where doctor='"+docid+"' and password='"+password+"'";
+            String qry1 = "select * from doctor where docid='"+docid+"' and password='"+password+"'";
             ResultSet rs1 = stmt.executeQuery(qry1);
             if(rs1.next())
             {
-              out.print("Hi "+rs1.getString(1)+ "Welcome, to  Medical Clinic Management System.");
+                String docName = rs1.getString(2);
+                
+              out.print("Hi "+docName+ "Welcome, to  Medical Clinic Management System.");
+                System.out.println(docName);
               
-              HttpSession se = request.getSession();
-              se.setAttribute("doctor" , docid);
+              //HttpSession se = request.getSession();
+              request.setAttribute("docName" , docName);
               
               request.getRequestDispatcher("doctorAccess.jsp").forward(request, response);
           }
@@ -69,13 +72,15 @@ public class DlogServlet extends HttpServlet {
               request.getRequestDispatcher("dlog.jsp").include(request, response);
           }
             
-            
-        } // try ends
-        catch(Exception ex) {
+        
+       
+           
+        }//tryends
+           
+       catch(Exception ex) {
             out.close();
-        }
-    }
-
+        }//finally ends
+    }//class ends
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.

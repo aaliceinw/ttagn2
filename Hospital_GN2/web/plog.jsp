@@ -7,37 +7,6 @@
         <link rel="stylesheet" type="text/css" href="formstyle.css" media="screen" />
     </head>
     <body>
-<!--       <center>
-        <div class="form">
-        <form action="plog" method="post">
-
-            <h1> Patient Login Form</h1>
-
-            <table border="1">
-
-                <tr>
-                    <td>Phone Number:<input type="text" name="phone" value="" />
-
-                </tr>
-                <tr>
-                    <td>Password: <input type="password" name="password" value="" /></td>
-
-                </tr>
-
-
-                <tr>
-                    <td><input id="s1" type="submit" value="Login" /></td>
-
-                    <td><input id="s1" type="reset" value="Clear" /></td>
-                </tr>
-
-
-
-        </table>
-</form>
-  </div>  
-    </center>-->
-    
     <div class="main-block">
     <form action="plog" method="post">
       <h1>Patient Access</h1>

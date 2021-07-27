@@ -14,9 +14,6 @@ import java.sql.Statement;
  * @author joanlaine
  */
 public class DoctorQuery {
-    
-   
-    
     //1. Insert Doctor record
     public static int insert(Doctor d)
     {
@@ -88,4 +85,26 @@ public class DoctorQuery {
 //        return row_delete;
 //    }    
 //    
+
+    public static int update(int phone , String medicine, String test) {
+        
+    int uprow=0;
+    try{
+        
+        //update record table[medicine and test] for given phone 
+        Connection con = MyConnection.connect();//get connection
+            Statement stmt = con.createStatement();
+            
+            String qry = "update record set medicine="+medicine+", test="+test+" where phone="+phone;;
+            
+            uprow = stmt.executeUpdate(qry);
+        
+    }
+    catch(Exception ex)
+    {
+        System.out.println("update error :"+ex);
+    }
+    return uprow;
+    
+    }
 }//class ends

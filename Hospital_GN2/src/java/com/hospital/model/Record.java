@@ -8,43 +8,55 @@ package com.hospital.model;
 /**
  *
  * @author joanlaine
- */
+ */   
 public class Record {
-    int pid;
+      int treat;
+    int phone;     
     String name;
-    String phone;
-    String dob;
-    String problem;
-    String docname;
-    int docid;
-    String test;
-    String treat;
+   String dob;
+   String problem;
+   String docName;
+   String medicine;
+   String test;
+   String bookingDate;
 
     //create default constructor
-    public Record() {
-    }
 
-    //create parameterized constructor
-    public Record(int pid, String name, String phone, String dob, String problem, String docname, int docid, String test, String treat) {
-        this.pid = pid;
-        this.name = name;
+    public Record() {
+       
+        
+    }
+    //create parameterized constructor 
+
+    public Record(int treat, int phone, String name, String dob, String problem, String docName, String medicine, String test, String bookingDate) {
+        this.treat = treat;
         this.phone = phone;
+        this.name = name;
         this.dob = dob;
         this.problem = problem;
-        this.docname = docname;
-        this.docid = docid;
+        this.docName = docName;
+        this.medicine = medicine;
         this.test = test;
-        this.treat = treat;
+        this.bookingDate = bookingDate;
     }
-    
+
+      
     //create getter setter
 
-    public int getPid() {
-        return pid;
+    public int getTreat() {
+        return treat;
     }
 
-    public void setPid(int pid) {
-        this.pid = pid;
+    public void setTreat(int treat) {
+        this.treat = treat;
+    }
+
+    public int getPhone() {
+        return phone;
+    }
+
+    public void setPhone(int phone) {
+        this.phone = phone;
     }
 
     public String getName() {
@@ -53,14 +65,6 @@ public class Record {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
     }
 
     public String getDob() {
@@ -79,20 +83,20 @@ public class Record {
         this.problem = problem;
     }
 
-    public String getDocname() {
-        return docname;
+    public String getDocName() {
+        return docName;
     }
 
-    public void setDocname(String docname) {
-        this.docname = docname;
+    public void setDocName(String docName) {
+        this.docName = docName;
     }
 
-    public int getDocid() {
-        return docid;
+    public String getMedicine() {
+        return medicine;
     }
 
-    public void setDocid(int docid) {
-        this.docid = docid;
+    public void setMedicine(String medicine) {
+        this.medicine = medicine;
     }
 
     public String getTest() {
@@ -103,14 +107,12 @@ public class Record {
         this.test = test;
     }
 
-    public String getTreat() {
-        return treat;
+    public String getBookingDate() {
+        return bookingDate;
     }
 
-    public void setTreat(String treat) {
-        this.treat = treat;
+    public void setBookingDate(String bookingDate) {
+        this.bookingDate = bookingDate;
     }
-    
-    
-    
+
 }

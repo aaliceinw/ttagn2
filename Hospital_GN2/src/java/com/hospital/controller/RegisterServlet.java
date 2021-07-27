@@ -29,12 +29,10 @@ request.getRequestDispatcher("dreg.jsp").forward(request, response);
 }   
 else{
   //patient regisration page
+  out.print("<h1>Oops.. your username or password is incorrect.</h1>");
 request.getRequestDispatcher("preg.jsp").forward(request, response);
-}    
 
-            
-                
-           
+}    
             }
          catch(Exception ex) {
             out.close();

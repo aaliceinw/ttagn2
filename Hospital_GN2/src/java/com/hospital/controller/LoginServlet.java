@@ -22,6 +22,7 @@ request.getRequestDispatcher("dlog.jsp").forward(request, response);
 else{
   //doctor Login page
 request.getRequestDispatcher("plog.jsp").forward(request, response);
+out.print("<h1>Oops.. your username or password is incorrect.</h1>");
 }
             }
          catch(Exception ex) {

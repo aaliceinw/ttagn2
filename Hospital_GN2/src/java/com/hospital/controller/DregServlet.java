@@ -63,16 +63,16 @@ public class DregServlet extends HttpServlet {
        
        if(r==1)
        {
-           out.print("You have successfully registered");
+           out.print("<h1>You have successfully registered</h1>");
            request.getRequestDispatcher("doctorAccess.jsp").include(request,response);
        }
        else{
-           out.print("Registration unsuccessful. All fields must be completed.");
+           out.print("<h1>Oops. Did you miss a field?</h1>");
            request.getRequestDispatcher("dreg.jsp").include(request, response);
 
     }}//else ends
         else{
-           out.print("Password did not match");
+           out.print("<h1>Oops!..Password don't match</h1>");
            request.getRequestDispatcher("dreg.jsp").include(request, response);  
         }
         
