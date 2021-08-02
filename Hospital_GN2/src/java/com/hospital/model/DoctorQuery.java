@@ -39,52 +39,7 @@ public class DoctorQuery {
         }//catch ends
         return row_insert;
     }//insert ends
-
-    //2.Validate existing user
-   
-    
-////2. update -> int
-//    public static int update(int sid , int up_score)
-//    {
-//        int row_update = 0;
-//        try
-//        {
-//            Connection con = MyConnection.connect();//get connection
-//            Statement stmt = con.createStatement();
-//            
-//            String qry = "update doctor set score="+up_score+" where sid="+sid;;
-//            
-//            row_update = stmt.executeUpdate(qry);
-//        }
-//        catch(Exception ex)
-//        {
-//            System.out.println("Update Error :"+ex);
-//        }
-//        
-//        return row_update;
-//    }
-//    
-//    //3. delete -> int
-//    public static int delete(int sid)
-//    {
-//        int row_delete = 0;
-//        try
-//        {
-//            Connection con = MyConnection.connect();//get connection
-//            Statement stmt = con.createStatement();
-//            
-//            String qry = "delete from student where sid="+sid;
-//            
-//            row_delete = stmt.executeUpdate(qry);
-//        }
-//        catch(Exception ex)
-//        {
-//            System.out.println("Delete Error :"+ex);
-//        }
-//        
-//        return row_delete;
-//    }    
-//    
+ 
 
     public static int update(int phone , String medicine, String test) {
         
@@ -95,7 +50,7 @@ public class DoctorQuery {
         Connection con = MyConnection.connect();//get connection
             Statement stmt = con.createStatement();
             
-            String qry = "update record set medicine="+medicine+", test="+test+" where phone="+phone;;
+            String qry = "update record set medicine="+medicine+", test="+test+" where phone="+phone;
             
             uprow = stmt.executeUpdate(qry);
         

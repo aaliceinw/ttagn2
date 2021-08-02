@@ -1,18 +1,19 @@
 
 <%@page import="java.sql.*"%>
 <%@page import="com.hospital.model.MyConnection"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
-        <head>
-        <title>Tookings</title>
-        <link rel="stylesheet" type="text/css" href="formstyle.css" media="screen" />
-                <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Booking Confirmation</title>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+        
     </head>
     <body>
-        <div id="main_container">
+                <div id="main_container">
             <div class="header">
-                <div id="logo"><a href="#"><img src="images/logo.png" alt="" width="162" height="54" border="0" /></a></div>
+                <div id="logo"><a href="index.jsp"><img src="images/logo.png" alt="" width="162" height="54" border="0" /></a></div>
                 <div class="right_header">
                     <div class="top_menu"> <a href="login.jsp" class="login">login</a><a href="logout" class="sign_up">Logout</a> </div>
                     <div id="menu">
@@ -26,10 +27,16 @@
             <div id="middle_box">
                 <div class="middle_box_content"><img src="images/banner_content.jpg" alt="" /></div>
             </div>
-            <div class="table">
+        
+        <center
+       
+         <div class="table">
                 <div class="form">
-                            <center>
-        <form action="booking" method="post">   
+             <form action="booking" method="post">    <center         
+        <legend>
+           <h3> Patient Booking Confirmation</h3>
+        </legend>
+        <fieldset>
       <%
                String name =request.getParameter("name");
       int phone = Integer.parseInt(request.getAttribute("phone").toString());
@@ -40,15 +47,6 @@
       String bookingDate = request.getParameter("bookingDate");
       Connection con = MyConnection.connect();
                 Statement stmt = con.createStatement();
-               
-           int insertRecord = stmt.executeUpdate("insert into record(name, phone, dob, problem, docName,bookingDate) values('"+name+"','"+phone+"','"+dob+"','"+problem+"','"+docName+"','"+bookingDate+"')");
-       // String name;
-        //int phone;
-        //String dob;
-       // String problem;
-       // String docName;
-       // String bookingDate;       
-
                 ResultSet rs = stmt.executeQuery("select * from record where phone="+phone);
                 %>
                 <table border="1">
@@ -64,38 +62,35 @@
                    bookingDate=rs.getString("bookingDate");
                    
   %>
-                    
+            
                                           <tr>
-                                            <th width="5px">No</th>
-                                            <th width="30px">Phone</th>
-                                            <th>Name</th>
+                                            <th width="15%">Patient's Name</th>
+                                            <th width=10%">Phone</th>
                                             <th width="10%">DOB</th>
-                                            <th>Problem</th>
-                                            <th>Doctor</th>
-                                            <th>Booking Date</th>
-                                        </tr
-  
-  
-  
-  <tr>
-                        <td><%= name%></td>
-                        <td><%= phone%></td>
-                        <td><%= dob%></td>
-                        <td><%= problem%></td>
-                        <td><%= docName%></td>
-                        <td><%= bookingDate%></td>
+                                            <th width="40%">Problem</th>
+                                            <th width="15%">Doctor's Name</th>
+                                            <th width="10%">Booking Date </th>
+                                          </tr>
+
+                    <tr>
+                        <th><%= name%></th>
+                        <th><%= phone%></th>
+                        <th><%= dob%></th>
+                        <th><%= problem%></th>
+                        <th><%= docName%></th>
+                        <th><%= bookingDate%></th>
                    </tr>
+                   
+              
 <%
                            }
                 
       %>
                                     </form>
-                                </table><!-- table ends  -->
-                                  
-                                </div><!-- div table ends -->
-                            
+                               </table>
+                            </fieldset>
+                                </div>
+                                    
                             </center>
-                                    </div><!-- div form ends  -->
-                        </div><!--div main container ends-->
     </body>
 </html>

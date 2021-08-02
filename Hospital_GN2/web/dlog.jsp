@@ -1,44 +1,17 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>dlog</title>
+        <title>Doctor Login</title>
         <link rel="stylesheet" type="text/css" href="formstyle.css" media="screen" />
     </head>
     <body>
-<!--     <center>
-        <div class="form">
-        <form action="dlogin" method="post">
-
-            <h1> Doctor Login Form</h1>
-
-            <table border="1">
-
-                <tr>
-                    <td>Doctor ID:<input type="text" name="docid" value="" />
-
-                </tr>
-                <tr>
-                    <td>Password: <input type="password" name="password" value="" /></td>
-
-                </tr>
-
-
-                <tr>
-                    <td><input id="s1" type="submit" value="Login" /></td>
-
-                    <td><input id="s1" type="reset" value="Clear" /></td>
-                </tr>
-        </table>
-</form>
-  </div>  
-         
-  </center>-->
-
-<div class="main-block">
+            <div class="table">
+                <div class="form">
+                            <center>
+                                
     <form action="dlogin" method="post">
-      <h1>Doctor Access</h1>
+      <h1>Login</h1>
       <fieldset>
         <legend>
           <h3>Doctor Login</h3>
@@ -54,6 +27,7 @@
           </div>
       </fieldset>
     </form>
+</div>
 </div>
     </body>
 </html>

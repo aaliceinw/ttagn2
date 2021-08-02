@@ -64,7 +64,7 @@ public class DregServlet extends HttpServlet {
        if(r==1)
        {
            out.print("<h1>You have successfully registered</h1>");
-           request.getRequestDispatcher("doctorAccess.jsp").include(request,response);
+           request.getRequestDispatcher("dlog.jsp").forward(request,response);
        }
        else{
            out.print("<h1>Oops. Did you miss a field?</h1>");

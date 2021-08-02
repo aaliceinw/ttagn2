@@ -1,5 +1,3 @@
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,13 +10,12 @@
  <div class="form">
         <form action="preg" method="post">
 <fieldset>
-            <legend>
-              <h3>Patient Registration</h3>
+            <legend>Registration</h3>
               
             </legend>
     
             <div class="form-inner">
-                <h1>Registration</h1>
+                <h1>Patient Registration</h1>
                 Patient Name: <input type="text" name="name" placeholder="Enter Name">
                 Phone Number: <input type="text" name="phone" placeholder="Enter phone number">
                 Address: <input type="text" name="address" placeholder="Enter Address">

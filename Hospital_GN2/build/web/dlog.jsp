@@ -1,16 +1,17 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>dlogin</title>
+        <title>Doctor Login</title>
         <link rel="stylesheet" type="text/css" href="formstyle.css" media="screen" />
     </head>
     <body>
-
-<div class="main-block">
+            <div class="table">
+                <div class="form">
+                            <center>
+                                
     <form action="dlogin" method="post">
-      <h1>Doctor Access</h1>
+      <h1>Login</h1>
       <fieldset>
         <legend>
           <h3>Doctor Login</h3>
@@ -26,6 +27,7 @@
           </div>
       </fieldset>
     </form>
+</div>
 </div>
     </body>
 </html>

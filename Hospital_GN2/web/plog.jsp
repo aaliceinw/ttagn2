@@ -1,4 +1,3 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,10 +8,10 @@
     <body>
     <div class="main-block">
     <form action="plog" method="post">
-      <h1>Patient Access</h1>
+      <h1>Patient Login</h1>
       <fieldset>
         <legend>
-          <h3>Patient Login</h3>
+          <h3>Login</h3>
           
         </legend>
 

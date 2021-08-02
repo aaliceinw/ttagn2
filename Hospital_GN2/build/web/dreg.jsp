@@ -1,68 +1,20 @@
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 
 <html>
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>preg</title>
+        <title>dreg</title>
         <link rel="stylesheet" type="text/css" href="formstyle.css" media="screen" />
-    </head>      
+    </head>���� �
 
-    <body>
-<!--
-    
-
-        <div class="form">
-
-        <form action="dreg" method="post">
-
-            <h1> Doctor Registration Form</h1>
-
-            <table border="1">
-
-                <tr>
-
-                    <td>Name:<input type="text" name="docName" value="" /> </td>
-
-                    <td>ID: <input type="text" name="docid" value="" /></td>
-
-                    <td>Address: <input type="text" name="address" value="" /></td>
-
-                    <td>Degree: <input type="text" name="degree" value="" /></td>
-
-                </tr>
-
-                <tr>
-
-                    <td>Phone Number: <input type="text" name="phone" value="" /></td>
-
-                    <td>Speciality: <input type="text" name="subject" value="" /></td>
-
-                    <td>Password: <input type="password" name="password" value="" /></td>
-
-                    <td>Confirm Password: <input type="password" name="cpassword" value="" /></td>
-
-                </tr>
-
-                <tr>
-
-                    <td><input id="s1" type="submit" value="Submit" /></td>
-
-                    <td><input id="s1" type="reset" value="Clear" /></td>
-
-                </tr>
-
-        </table>
-</form>-->
+� � <body>
 
 <div class="form">
         <form action="dreg" method="post">
 <fieldset>
             <legend>
-              <h3>Doctor Registration</h3>
+              <h3>Registration</h3>
               
             </legend>
     
@@ -83,10 +35,10 @@
       </fieldset>
         </form>
 
-  </div>   
-        
+� </div> ��
+� �  � �
 
-    </body>
+� � </body>
 
 </html>
 

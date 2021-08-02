@@ -32,6 +32,10 @@
         <servlet-name>BookingServlet</servlet-name>
         <servlet-class>com.hospital.controller.BookingServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ConsultServlet</servlet-name>
+        <servlet-class>com.hospital.controller.ConsultServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/register</url-pattern>
@@ -63,6 +67,10 @@
     <servlet-mapping>
         <servlet-name>BookingServlet</servlet-name>
         <url-pattern>/booking</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ConsultServlet</servlet-name>
+        <url-pattern>/consult</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

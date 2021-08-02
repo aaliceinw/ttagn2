@@ -10,7 +10,7 @@
     <body>
         <div id="main_container">
             <div class="header">
-                <div id="logo"><a href="#"><img src="images/logo.png" alt="" width="162" height="54" border="0" /></a></div>
+                <div id="logo"><a href="index.jsp"><img src="images/logo.png" alt="" width="162" height="54" border="0" /></a></div>
                 <div class="right_header">
                     <div class="top_menu"> <a href="login.jsp" class="login">login</a><a href="logout" class="sign_up">Logout</a> </div>
                     <div id="menu">
@@ -46,18 +46,18 @@
                                     <form action="consult" method="post">
                                     <thead>
                                         <tr>
-                                            <th width="30px">Phone</th>
-                                            <th>Name</th>
-                                            <th width="10%">DOB</th>
-                                            <th>Problem</th>
+                                            <th width="5%">Phone</th>
+                                            <th width="45%">Name</th>
+                                            <th width="5%">DOB</th>
+                                            <th width="45%">Problem</th>
                                         </tr><!-- DAccess th content ends -->
                                     </thead><!-- DAccess theadcontent ends -->
                                     <tbody>
                                         <tr>
-                                            <td><input type="text" name="phone" value=<%= rs1.getString("phone")%>></td>
+                                            <td><input type="text" name="phone" value=<%= rs1.getInt("phone")%>></td>
                                             <td><input type="text" name="name" value=<%= rs1.getString("name")%>></td>
                                             <td><input type="text" name="dob" value=<%= rs1.getString("dob")%>></td>
-                                            <td><input type="text" name="problem" value=<%= rs1.getString("problem")%>></td>
+                                            <td><!--input type="text" name="problem" value=--><%= rs1.getString("problem")%></td>
                                         </tr><!-- display patient output ends -->
                                  
                                         <tr>

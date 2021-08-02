@@ -1,30 +1,17 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
 <head>
 <title>Home</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- 
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-<!--[if IE 6]>
-<link rel="stylesheet" type="text/css" href="iecss.css" />
-<![endif]-->
 </head>
 <body>
 <div id="main_container">
   <div class="header">
-    <div id="logo"><a href="#"><img src="images/logo.png" alt="" width="162" height="54" border="0" /></a></div>
+    <div id="logo"><a href="index.jsp"><img src="images/logo.png" alt="" width="162" height="54" border="0" /></a></div>
     <div class="right_header">
         <div class="top_menu"> <a href="index.jsp" class="index">Home</a><a href="login.jsp" class="login">login</a> <a href="register.jsp" class="sign_up">Register</a> </div>
-<!--      <div id="menu">
-        <ul>
-            <li><a class="current" href="index.jsp">Home</a></li>
-          <li><a href="patientAccess.jsp" target="=f1">Patient Access</a></li>
-          <li><a href="doctorAccess.jsp" target="f1">Doctor Access</a></li>
-          <li><a href="bookings.jsp" target="f1">Bookings</a></li>
-        </ul>
-      </div>-->
     </div>
   </div>
   <div id="middle_box">
